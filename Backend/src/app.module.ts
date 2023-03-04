@@ -1,11 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ClientsModule } from './clients/clients.module';
 import { AccountsModule } from './accounts/accounts.module';
 import { TransactionsModule } from './transactions/transactions.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -20,11 +18,9 @@ import { TransactionsModule } from './transactions/transactions.module';
       autoLoadEntities: true,
       synchronize: true, // dont needed in true in production
     }),
-    ClientsModule,
     AccountsModule,
     TransactionsModule,
+    AuthModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
