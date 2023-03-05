@@ -1,9 +1,26 @@
-import GoogleSvg from "@/components/svg/Google.svg";
+import { Header } from "@/components/Header";
+import { Modal } from "@/components/Modal";
+import { Table } from "@/components/Table";
+import { useGlobalContext } from "@/hooks/useGlobalContext";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const router = useRouter();
+  const { client } = useGlobalContext();
+  const [message, setMessage] = useState("");
+  const [showTable, setShowTable] = useState(false);
+  useEffect(() => {
+    if (client.token == "") {
+      setMessage("The client is not logged");
+      setShowTable(false);
+    } else {
+      setMessage(`Client Logged with email ${client.email}`);
+      setShowTable(true);
+    }
+  }, [client.token]);
+
   return (
     <>
       <Head>
@@ -12,12 +29,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="bg-slate-200 flex flex-row justify-between px-5 py-1 items-center">
+      {/* <header className="bg-slate-200 flex flex-row justify-between px-5 py-1 items-center">
         <div>Viio Prueba Tecnica</div>
         <div className="flex flex-row items-center  cursor-pointer">
           <button onClick={() => router.push("/auth/singIn")}>Sing In</button>
         </div>
-      </header>
+      </header> */}
+      <Header></Header>
+      <div className="flex justify-center flex-col gap-5 items-center p-5">
+        <div className="flex  justify-between gap-7">
+          {message}
+          <Modal></Modal>
+        </div>
+        <div className="card w-9/12 glass">
+          {showTable && <Table clientId={client.id} />}
+        </div>
+      </div>
     </>
   );
 }

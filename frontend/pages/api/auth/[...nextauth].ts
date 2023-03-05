@@ -12,14 +12,13 @@ export const authOptions: AuthOptions = {
   ],
   callbacks: {
     session({ session, token, user }) {
+      console.log(15, { session, token, user });
       return session; // The return type will match the one returned in `useSession()`
     },
   },
   pages: {
     signIn: "/",
   },
-  session: { strategy: "jwt" },
-  jwt: {},
 };
 
 export default NextAuth(authOptions);

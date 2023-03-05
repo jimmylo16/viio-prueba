@@ -13,7 +13,7 @@ async function bootstrap() {
       // forbidNonWhitelisted: true,
     }),
   );
-
+  app.enableCors();
   await app.listen(process.env.PORT || 3000);
   Logger.log(`App running on port ${process.env.PORT || 3000}`);
 }
