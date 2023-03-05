@@ -23,7 +23,6 @@ export class AuthController {
     @Param('id', new ParseUUIDPipe()) id: string,
     @Body() updateClientDto: UpdateClientDto,
   ) {
-    console.log({ updateClientDto });
     return this.authService.update(id, updateClientDto);
   }
   @Delete('delete/:id')

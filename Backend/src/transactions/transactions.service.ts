@@ -42,7 +42,6 @@ export class TransactionsService {
     const transaction = await this.transactionRepository.findOneBy({
       transactionId,
     });
-    console.log({ transaction });
     if (!transaction)
       throw new NotFoundException(
         `The client with the transactionId=${transactionId} was not found`,
@@ -58,7 +57,6 @@ export class TransactionsService {
       transactionId,
       ...updateTransactionDto,
     });
-    console.log(79, { ...updateTransactionDto });
     if (!transaction) {
       throw new NotFoundException(
         `The transaction with the id=${transactionId} was not found`,

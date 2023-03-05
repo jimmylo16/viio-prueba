@@ -55,7 +55,6 @@ export class AccountsService {
       accountId,
       ...updateAccountDto,
     });
-    console.log(79, { ...updateAccountDto });
     if (!account) {
       throw new NotFoundException(
         `The account with the id=${accountId} was not found`,

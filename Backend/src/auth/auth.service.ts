@@ -71,7 +71,6 @@ export class AuthService {
   }
 
   private handleDBErrors(error: any) {
-    console.log(error);
     if (error.code === '23505') {
       throw new BadRequestException(error.detail);
     }
@@ -84,7 +83,6 @@ export class AuthService {
       id,
       ...updateClientDto,
     });
-    console.log(79, { ...updateClientDto });
     if (!client) {
       throw new NotFoundException(`The Client with the id=${id} was not found`);
     }
