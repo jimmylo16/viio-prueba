@@ -30,5 +30,11 @@ Ensure in the frontEnd  a .env.local with the following env variable
 
 GOOGLE_CLIENT_SECRET="google credentials"
 
+In the root directory there are a file called 
+
+```bash
+viio collection.postman_collection.json
+```
+this is a json file that you can import to postman and see the crud operations with examples
 
 
