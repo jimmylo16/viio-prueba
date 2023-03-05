@@ -1,0 +1,8 @@
+DB_NAME=viio
+DB_PASSWORD=secretPassword
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+JWT_SECRET=Secret1223
+
+PORT=5000
