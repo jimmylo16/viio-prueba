@@ -1,10 +1,16 @@
 import { Account } from 'src/accounts/entities/account.entity';
-import { Entity, ManyToMany, PrimaryColumn } from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Transaction {
-  @PrimaryColumn({ type: 'uuid' })
+  @PrimaryGeneratedColumn('uuid')
   transactionId: string;
-  @ManyToMany(() => Account, (account) => account.transactions)
+  @Column()
+  name: string;
+  @Column({ default: '' })
+  description: string;
+  @Column({ default: 0 })
+  cost: number;
+  @ManyToOne(() => Account, (account) => account.accountId)
   account: Account;
 }

@@ -1,4 +1,11 @@
-import { Entity, Column, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  OneToMany,
+  PrimaryGeneratedColumn,
+  JoinColumn,
+  RelationId,
+} from 'typeorm';
 import { Account } from '../../accounts/entities/account.entity';
 
 @Entity()
@@ -7,7 +14,7 @@ export class Client {
   id: string;
   @Column('text')
   name: string;
-  @Column('text')
+  @Column('text', { default: '' })
   lastName: string;
   @Column('text', { unique: true })
   email: string;

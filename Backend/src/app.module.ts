@@ -18,9 +18,9 @@ import { AuthModule } from './auth/auth.module';
       autoLoadEntities: true,
       synchronize: true, // dont needed in true in production
     }),
+    AuthModule,
     AccountsModule,
     TransactionsModule,
-    AuthModule,
   ],
 })
 export class AppModule {}

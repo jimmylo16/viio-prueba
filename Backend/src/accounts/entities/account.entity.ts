@@ -1,14 +1,23 @@
 import { Client } from 'src/auth/entities/clients.entity';
 import { Transaction } from 'src/transactions/entities/transaction.entity';
-import { Column, Entity, ManyToMany, OneToMany, PrimaryColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  ManyToMany,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 
 @Entity()
 export class Account {
-  @PrimaryColumn({ type: 'uuid' })
+  @PrimaryGeneratedColumn('uuid')
   accountId: string;
   @Column('text')
   accountName: string;
-  @ManyToMany(() => Client, (client) => client.accounts)
+  @Column('text', { default: '' })
+  accountDescription?: string;
+  @ManyToOne(() => Client, (client) => client.accounts)
   client: Client;
   @OneToMany(() => Transaction, (transaction) => transaction.account)
   transactions: Transaction[];
