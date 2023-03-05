@@ -1,0 +1,1367 @@
+{
+	"info": {
+		"_postman_id": "947dc50a-c65c-488d-8993-70005099bd14",
+		"name": "viio collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21823421"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "register client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jimmylo16@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Jimmy\",\r\n    \"lastName\": \"Jimmy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register client",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"jimmylo160061@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Jimmy\",\r\n    \"lastName\": \"Jimmy\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "297"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"129-J5g0Tvf1IAq+tflQh5CpRS3t/7o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 05:04:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Jimmy\",\n    \"lastName\": \"Jimmy\",\n    \"email\": \"jimmylo160061@gmail.com\",\n    \"id\": \"8a51fe38-9978-414c-817e-42119f9cde4e\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbW15bG8xNjAwNjFAZ21haWwuY29tIiwiaWF0IjoxNjc3OTA2MjgxLCJleHAiOjE2Nzc5MTM0ODF9.5IPayPIUxDiiXKBs-ckrzAF9fybDOXKmQKIuItyjOHY\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jimmylo160061@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login client",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"jimmylo160061@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "293"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"125-m4YlcepuszLCnnXkQCcfqzKWeps\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 05:04:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"jimmylo160061@gmail.com\",\n    \"password\": \"$2b$10$ta8BPECtk7iHLk/teUcQZORTmFpYn0z.FM4t.P8204emZtsiMoVt.\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbW15bG8xNjAwNjFAZ21haWwuY29tIiwiaWF0IjoxNjc3OTA2Mjk3LCJleHAiOjE2Nzc5MTM0OTd9.ugJqblV6khPCPSuZYtbUX2tqQmy6hSIAffKx33-evwM\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update client",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jimmyyy\",\r\n    \"lastName\": \"lopez\",\r\n    \"email\": \"jimmylo160061@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/update/8a51fe38-9978-414c-817e-42119f9cde4e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"update",
+								"8a51fe38-9978-414c-817e-42119f9cde4e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update client",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Jimmyyy\",\r\n    \"lastName\": \"lopez\",\r\n    \"email\": \"jimmylo160061@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/update/8a51fe38-9978-414c-817e-42119f9cde4e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"update",
+										"8a51fe38-9978-414c-817e-42119f9cde4e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-keRjtbaTO3e+WcA+9zLHkfHcNG4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 05:38:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"8a51fe38-9978-414c-817e-42119f9cde4e\",\n    \"name\": \"Jimmyyy\",\n    \"lastName\": \"lopez\",\n    \"email\": \"jimmylo160061@gmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/delete/d6b1f237-6a65-43b6-8fef-9317b4598ed2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"delete",
+								"d6b1f237-6a65-43b6-8fef-9317b4598ed2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update client",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Jimmyyy\",\r\n    \"lastName\": \"lopez\",\r\n    \"email\": \"jimmylo160061@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/update/8a51fe38-9978-414c-817e-42119f9cde4e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"update",
+										"8a51fe38-9978-414c-817e-42119f9cde4e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-keRjtbaTO3e+WcA+9zLHkfHcNG4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 05:38:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"8a51fe38-9978-414c-817e-42119f9cde4e\",\n    \"name\": \"Jimmyyy\",\n    \"lastName\": \"lopez\",\n    \"email\": \"jimmylo160061@gmail.com\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "add Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"b10bdf50-b2f1-41b7-bd7d-c7908d7c9145\",\r\n    \"accountDescription\": \"accountDescription\",\r\n    \"accountName\": \"accountName\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\": \"b10bdf50-b2f1-41b7-bd7d-c7908d7c9145\",\r\n    \"accountDescription\": \"accountDescription\",\r\n    \"accountName\": \"accountName\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-guA+EHMh8n63GOmzX4ihZ1y3Cn0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 20:12:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountName\": \"accountName\",\n    \"accountDescription\": \"accountDescription\",\n    \"accountId\": \"a07eda9e-0ba6-498b-a39c-50ddf760459e\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get accounts by client",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/account/findByClient/b10bdf50-b2f1-41b7-bd7d-c7908d7c9145",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account",
+								"findByClient",
+								"b10bdf50-b2f1-41b7-bd7d-c7908d7c9145"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\": \"b10bdf50-b2f1-41b7-bd7d-c7908d7c9145\",\r\n    \"accountDescription\": \"accountDescription\",\r\n    \"accountName\": \"accountName\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-guA+EHMh8n63GOmzX4ihZ1y3Cn0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 20:12:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountName\": \"accountName\",\n    \"accountDescription\": \"accountDescription\",\n    \"accountId\": \"a07eda9e-0ba6-498b-a39c-50ddf760459e\"\n}"
+						}
+					]
+				},
+				{
+					"name": "find account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/account/f836b640-4d07-407a-b8d4-95ab4db7f16d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account",
+								"f836b640-4d07-407a-b8d4-95ab4db7f16d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "find account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account/f836b640-4d07-407a-b8d4-95ab4db7f16d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"f836b640-4d07-407a-b8d4-95ab4db7f16d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "124"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7c-2Tit9iTME9wqCdT3+tp64jMOoZQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 21:33:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"accountId\": \"f836b640-4d07-407a-b8d4-95ab4db7f16d\",\n        \"accountName\": \"accountName\",\n        \"accountDescription\": \"accountDescription\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "update account",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"accountId\": \"f836b640-4d07-407a-b8d4-95ab4db7f16d\",\r\n        \"accountName\": \"updated account name\",\r\n        \"accountDescription\": \"accountDescription\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/account/f836b640-4d07-407a-b8d4-95ab4db7f16d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account",
+								"f836b640-4d07-407a-b8d4-95ab4db7f16d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update account",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"accountId\": \"f836b640-4d07-407a-b8d4-95ab4db7f16d\",\r\n        \"accountName\": \"updated account name\",\r\n        \"accountDescription\": \"accountDescription\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account/f836b640-4d07-407a-b8d4-95ab4db7f16d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"f836b640-4d07-407a-b8d4-95ab4db7f16d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "131"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"83-t57VR3vNsJzpjgbjaH1Rfsw0eUM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 21:39:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountId\": \"f836b640-4d07-407a-b8d4-95ab4db7f16d\",\n    \"accountName\": \"updated account name\",\n    \"accountDescription\": \"accountDescription\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/account/f836b640-4d07-407a-b8d4-95ab4db7f16d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account",
+								"f836b640-4d07-407a-b8d4-95ab4db7f16d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\": \"b10bdf50-b2f1-41b7-bd7d-c7908d7c9145\",\r\n    \"accountDescription\": \"accountDescription\",\r\n    \"accountName\": \"accountName\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-guA+EHMh8n63GOmzX4ihZ1y3Cn0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 20:12:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountName\": \"accountName\",\n    \"accountDescription\": \"accountDescription\",\n    \"accountId\": \"a07eda9e-0ba6-498b-a39c-50ddf760459e\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transactions",
+			"item": [
+				{
+					"name": "add Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": \"72616bc2-7837-4765-a21d-b64891a09d5f\",\r\n    \"name\": \"transferencia a nequi\",\r\n    \"description\": \"pago de tareas\",\r\n    \"cost\": 5000\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\": \"b10bdf50-b2f1-41b7-bd7d-c7908d7c9145\",\r\n    \"accountDescription\": \"accountDescription\",\r\n    \"accountName\": \"accountName\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-guA+EHMh8n63GOmzX4ihZ1y3Cn0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 20:12:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountName\": \"accountName\",\n    \"accountDescription\": \"accountDescription\",\n    \"accountId\": \"a07eda9e-0ba6-498b-a39c-50ddf760459e\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get Transactions by Account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/transaction/findByAccount/72616bc2-7837-4765-a21d-b64891a09d5f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transaction",
+								"findByAccount",
+								"72616bc2-7837-4765-a21d-b64891a09d5f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get Transactions by Account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/transaction/findByAccount/72616bc2-7837-4765-a21d-b64891a09d5f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"transaction",
+										"findByAccount",
+										"72616bc2-7837-4765-a21d-b64891a09d5f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "401"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"191-9PZJmw5iUGLKCjiF0qSYAE2Bwq8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 23:10:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountId\": \"72616bc2-7837-4765-a21d-b64891a09d5f\",\n    \"accountName\": \"accountName\",\n    \"accountDescription\": \"accountDescription\",\n    \"transactions\": [\n        {\n            \"transactionId\": \"e114bf46-e66d-493f-bb66-b044f2de614e\",\n            \"name\": \"transferencia a nequi\",\n            \"description\": \"pago de tareas\",\n            \"cost\": 5000\n        },\n        {\n            \"transactionId\": \"f80ceacf-9273-4069-84fb-3fd55f7c7a80\",\n            \"name\": \"transferencia a nequi\",\n            \"description\": \"pago de tareas\",\n            \"cost\": 5000\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "find transaction",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/transaction/e114bf46-e66d-493f-bb66-b044f2de614e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transaction",
+								"e114bf46-e66d-493f-bb66-b044f2de614e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "find transaction",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/transaction/e114bf46-e66d-493f-bb66-b044f2de614e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"transaction",
+										"e114bf46-e66d-493f-bb66-b044f2de614e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"82-0rWkyLCvGOrOYXjE76JRwrP17yk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 Mar 2023 00:57:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"transactionId\": \"e114bf46-e66d-493f-bb66-b044f2de614e\",\n    \"name\": \"transferencia a nequi\",\n    \"description\": \"pago de tareas\",\n    \"cost\": 5000\n}"
+						}
+					]
+				},
+				{
+					"name": "update account",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"transferencia a otro banco\",\r\n    \"description\": \"pago de tareas\",\r\n    \"cost\": 10000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/transaction/e114bf46-e66d-493f-bb66-b044f2de614e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transaction",
+								"e114bf46-e66d-493f-bb66-b044f2de614e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update account",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"accountId\": \"f836b640-4d07-407a-b8d4-95ab4db7f16d\",\r\n        \"accountName\": \"updated account name\",\r\n        \"accountDescription\": \"accountDescription\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account/f836b640-4d07-407a-b8d4-95ab4db7f16d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"f836b640-4d07-407a-b8d4-95ab4db7f16d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "131"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"83-t57VR3vNsJzpjgbjaH1Rfsw0eUM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 21:39:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountId\": \"f836b640-4d07-407a-b8d4-95ab4db7f16d\",\n    \"accountName\": \"updated account name\",\n    \"accountDescription\": \"accountDescription\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/transaction/f80ceacf-9273-4069-84fb-3fd55f7c7a80",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transaction",
+								"f80ceacf-9273-4069-84fb-3fd55f7c7a80"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\": \"b10bdf50-b2f1-41b7-bd7d-c7908d7c9145\",\r\n    \"accountDescription\": \"accountDescription\",\r\n    \"accountName\": \"accountName\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-guA+EHMh8n63GOmzX4ihZ1y3Cn0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 20:12:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountName\": \"accountName\",\n    \"accountDescription\": \"accountDescription\",\n    \"accountId\": \"a07eda9e-0ba6-498b-a39c-50ddf760459e\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
