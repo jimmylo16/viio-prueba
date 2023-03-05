@@ -10,6 +10,8 @@ $ cd Backend
 $ docker-compose up -d 
 ```
 ### BackEnd
+
+change the .envCopy file name to ".env"
 ```bash
 $ cd Backend
 $ npm install
@@ -27,3 +29,6 @@ $ npm run dev
 Ensure in the frontEnd  a .env.local with the following env variable 
 
 GOOGLE_CLIENT_SECRET="google credentials"
+
+
+
